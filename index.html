@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+       *{
+padding:0;
+  margin:0;
+   box-sizing:border-box;
+} 
+.container{
+  width:825px;
+  margin:30px auto; 
+  position:relative;
+}
+article{
+  border:3px solid #999
+  }  
+
+
+h2{ 
+background-color:#123;
+text-align:center;
+color:#fff;
+padding-top:20px ;
+padding-bottom:10px;
+}
+
+h2,
+.ship-1,
+h3,
+button{
+text-transform:uppercase;
+}
+
+.sales-hh{
+  background-color:yellow;
+  letter-spacing:5px;
+  font-size:10px;
+  font-weight:bold;
+  padding:10px 10px;
+  position:absolute;
+  top:-19px;
+  left:-32px;
+}
+/* use the pseudo element approach.
+h2::before{
+  content:"S A L E";
+  background-color:yellow;
+  color:black;
+  Font-size:12px;
+  padding:10px 15px;
+  position:absolute;
+  top:-19px;
+  left:-34px;
+} */
+
+/*.img-1{
+ margin-top:10px;  
+   width:240px;
+   float:left;
+}*/
+
+/*.subcontainer-1{
+  width:240px;
+  float:left;
+ margin-left:40px;
+}*/
+
+/*
+.subcontainer-2{
+  width:250px;
+  float:left; 
+  margin-left:40px;
+}*/
+.price-d{
+font-size:19px;
+/*   margin-bottom:22px; */
+  margin-top:22px;
+/*   float:left;
+  width:130px; */
+/*   border:3px solid black; */
+/* margin-bottom:22px;  */
+}
+
+
+
+
+  /*.price-d{
+align-items:center;
+  margin-bottom:22px; 
+  margin-top:20px;
+} */
+
+.ship-1{
+  font-size:12px;
+  font-weight:bold;
+  font-family:san serif;
+  color:#889;
+/* margin-top:20px ;
+   */
+ 
+/*  background-color:brown;
+ border:2px solid green;
+ position:relative; */
+/*  padding-top:22px; */
+}
+.ready-p{
+  margin-bottom:20px ;
+  margin-top:20px
+}
+a:link, a:visited{
+  color:#000;
+ margin-bottom:10px;
+ display:block; 
+} 
+a{
+   margin-bottom:22px;
+} 
+
+a:hover,a:active{
+text-decoration:none;
+color:blue;
+/* background-color:brown; */
+}
+
+h3{
+ margin-top:22px; 
+  /*margin-bottom:22px; */
+/*   border:2px solid red;
+  position:absolute;
+  right:20px; */
+}
+
+.black-box{
+  width:20px;
+  height:20px; 
+  background-color:black;
+ margin-bottom:13px;
+ margin-top:5px;
+border:1px solid black; 
+}
+
+.blue-box{
+  width:20px;
+  height:20px; 
+  background-color:blue;
+ margin-bottom:13px;
+ margin-top:5px;
+  border:1px solid black; 
+}
+
+.red-box{
+  width:20px;
+  height:20px; 
+  background-color:red;
+ margin-bottom:13px;
+ margin-top:5px;
+  border:1px solid black; 
+}
+
+.yellow-box{
+  width:20px;
+  height:20px; 
+  background-color:yellow;
+ margin-bottom:13px;
+ margin-top:5px;
+  border:1px solid black; 
+}
+
+.green-box{
+  width:20px;
+  height:20px; 
+  background-color:green;
+ margin-bottom:13px;
+ margin-top:5px;
+  border:1px solid black; 
+}
+
+.brown-box{
+  width:20px;
+  height:20px; 
+  background-color:brown;
+ margin-bottom:13px;
+ margin-top:5px;
+  border:1px solid black; 
+}
+
+/*.black-box,
+.blue-box,
+.red-box,
+.yellow-box,
+.green-box,
+.brown-box{
+  display:inline-block;
+  margin-right:15px;
+}*/
+
+
+.details-list li{
+  margin:22px;
+}
+
+button{
+background-color:#000;
+width:100%; 
+color:#fff; 
+border-top:4px solid black;
+font-size:12px;
+cursor:pointer;
+padding:15px;
+}
+button:hover{
+background-color:white;
+color:#000;
+}
+.details-list{
+list-style:square;  
+}
+/* (when i dud the global reset, the list section loss its bulletin. why is what) */
+
+
+/* using flex */
+/* .im-n2others{
+  display:flex;
+  gap:40px;
+}
+
+.subcontainer-1{
+  margin-top:22px;
+  flex:1;
+}
+
+.subcontainer-2{
+margin-top:22px;
+  flex:1;
+}
+ */
+
+/* using css grid */
+.co{
+  display:flex;
+justify-content:space-between; 
+}
+.price-ship{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+ 
+}
+.container{
+  display: grid;
+  grid-template-columns:250px 1fr 1fr;
+column-gap:40px;   
+}
+ 
+.he-1{
+  grid-column: 1/-1; 
+}
+.b-b{
+    grid-column: 1/span 3;
+}
+
+    </style>
+  </head>
+  <body>
+    
+<article class="container">
+  <h2 class="he-1">Converse Chuck Taylor All Star Low Top</h2>
+  <p class="sales-hh">SALE</p>
+  
+<!--   <div class="im-n2others"> -->
+    
+  <img class="img-1" src="https://i.ibb.co/Jr7Wh1d/challenges.jpg" alt="chuck of all star shoe" width="250"height="250"/>
+  
+ <div class="subcontainer-1"> 
+  <div class="price-ship">
+    
+  <p class="price-d"> <strong>&#36 65.00 </strong>
+    
+  </p>
+  <p class="ship-1">free shipping</p>
+  </div>
+  <p class="ready-p">ready to dress up or down these canvas classic Chunks are an everyday wardrope staple.</p>
+  <a href="https://www.converse.com>"class="mor-inf">More information &rarr;</a>
+  
+
+  <div class="co">
+    <div class="black-box"></div>
+    <div class="blue-box"></div>
+    <div class="co red-box"></div>
+    <div class="yellow-box"></div>
+    <div class="green-box"></div>
+    <div class="brown-box"></div>
+  </div>
+</div>
+<div class="subcontainer-2">
+  <h3>Product Details</h3>
+  <ul class="details-list">
+     <li>Lightweught,durable canvas sneakers</li>
+     <li>Lightly padded footbed for added comfort</li>
+     <li>Iconic Chucks Taylor ankle patch.</li>
+  </ul>
+<!--   </div> -->
+ </div> 
+  <button class="b-b"><strong>Add to cart</strong></button>
+    
+</article>
+
+  </body>
+</html>
